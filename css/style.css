@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.hero {
+  width: 80%;
+  height: 450px;
+  margin: 100px auto;
+  position: relative;
+  overflow: hidden;
+}
+.btn-line {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.btn-line button {
+  font-size: 1.2rem;
+  padding: 14px 2.4rem;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.btn-line button i {
+  font-size: 1.4rem;
+  margin-right: 1rem;
+  transition: all 0.3s;
+}
+.btn-line button:hover i {
+  color: #ff7846;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% auto;
+  position: absolute;
+  transform: translateX(100%);
+  transition: all 0.3s ease;
+  transform-origin: left;
+}
+.left {
+  flex-basis: 50%;
+  padding-inline: 10px;
+}
+.left p {
+  font-size: 13px;
+  padding: 38px 0;
+  letter-spacing: 2px;
+  line-height: 20px;
+}
+.left a {
+  text-decoration: none;
+  color: white;
+  background-color: #ff7846;
+  border-radius: 30px;
+  width: 150px;
+  padding: 1rem 1.4rem;
+}
+.right {
+  flex-basis: 50%;
+}
+.right img {
+  width: 350px;
+}
+#content-1 {
+  transform: translateX(0);
+}
+#btn-1 {
+  color: #ff7846;
+}
